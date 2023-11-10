@@ -14,7 +14,6 @@ public class UserResource {
 	// 
 	@GetMapping
 	public ResponseEntity<User> findAll(){
-		// Criando uma instância de usuário
 		User u = new User(1L, "Maria", "maria@gmail.com", "99999999999", "1234");
 	
 		return ResponseEntity.ok().body(u);
